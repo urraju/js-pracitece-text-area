@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Text Editor</title>
+
+    <style>
+        .hello{
+            font-weight: ;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- text editor create  -->
+
+    <main class="w-9/12 bg-green-200 mx-auto p-10 mt-20 rounded-r-md shadow-md">
+        <h1 class="text-4xl  text-center mt-8 font-semibold capitalize text-sky-800">My text editor</h1>
+        <section class="p-10 border mt-5  border-pink-400">
+            <!-- editor catcut  -->
+            <div class="flex justify-between ">
+                <div class="space-x-4 text-xl">
+                    <span id="bold" ><i class="fa-solid fa-bold"></i></span>
+                    <span id="italic" ><i class="fa-solid fa-italic"></i></span>
+                    <span id="underLine" ><i class="fa-solid fa-underline"></i></span>
+                </div>
+                <div class="space-x-4 text-xl">
+                    <span id="left"><i class="fa-solid fa-align-left"></i></span>
+                    <span id="center"><i class="fa-solid fa-align-center"></i></span>
+                    <span id="right"><i class="fa-solid fa-align-right"></i></span>
+                </div>
+                <div class="space-x-4 text-xl">
+                    <input id="size" type="range" value="10" step="5">
+                     <select class="bg-transparent  w-10 font   ring-sky-900 outline-none rounded-full" name="" id="ff">
+                         
+                        <!-- <span><i class="fa-solid fa-font"></i></span> -->
+                        <option value="font">FF</option>
+                        <option value="impact">Impact</option>
+                        <option value="poppins">Poppins</option>
+                        <option value="roboto">Roboto</option>
+                        <option value="serif">Serif</option>
+                        <option value="thin">Thin</option>
+                         
+                     </select>
+                    <input id="color" type="color" class="control">
+                </div>
+            </div>
+             <!-- text area type  -->
+            <div class="mt-7">
+                <textarea class="px-5 rounded-md py-3 outline-none border  text-xl w-full"  name="" id="textArea" cols="" rows="10"></textarea>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
